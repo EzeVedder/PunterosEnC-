@@ -1,0 +1,13 @@
+-----Punteros en C------18/05/18
+
+LA PILA ESTA DISEÑADA PARA GUARDAR VARIABLES QUE APUNTEN HACIA OTRA DIRECCION DE MEMORIA 
+
+PESO DE PUNTERO---> 4 BYTES !!!
+
+scanf("%d",puntero+i); //suma el sizeof (4 bytes) el valor que toma la variable i lo multiplica por el sizeof
+
+PARA MOSTRAR VALOR ---> * --> OPERADOR DE IN ACCESO (ASTERISCO) ---> printf("%d\n",*(puntero+i));
+
+
+USAR IF PARA EL PUNTERO --->PORQUE PUEDE NO TENER NADA
+if(cargarArray(vector,3) == 1)//el if espera un valor booleano si es 0 es falso SI RETORNA CUALQUIER VALOR DISTINTO DE CERO ES VERDADERO
