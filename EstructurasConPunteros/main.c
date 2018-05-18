@@ -9,7 +9,6 @@ typedef struct
 }dato;
 
 
-
 int main()
 {
     dato d;
@@ -20,8 +19,11 @@ int main()
     dato* pDato;
     pDato = &d;
 
-    printf("%d -- %d",&d,&d.a);//& y d para ver la direccion de memoria ---a es donde empieza la estructura por eso es la misma direccion de memoria
-    printf("%d--%c",pDato);
+    printf("\n%d -- %d",&d,&d.a);//& y d para ver la direccion de memoria ---a es donde empieza la estructura por eso es la misma direccion de memoria
+    printf("\n%d--%c",pDato->a,pDato->b); //de esta manera se accede a los datos con flecha
+
 
     return 0;
 }
+
+
