@@ -11,3 +11,34 @@ PARA MOSTRAR VALOR ---> * --> OPERADOR DE IN ACCESO (ASTERISCO) ---> printf("%d\
 
 USAR IF PARA EL PUNTERO --->PORQUE PUEDE NO TENER NADA
 if(cargarArray(vector,3) == 1)//el if espera un valor booleano si es 0 es falso SI RETORNA CUALQUIER VALOR DISTINTO DE CERO ES VERDADERO
+
+printf("\n%d",sizeof(d.a));//devuelve tipo de dato int = 4
+
+
+typedef struct
+{
+    int a;//4
+    char b;//1
+    char c;//1---> el resultado de los tres es 6 por lo que va a terminar sumandose 2 para completar 8bytes
+}dato;
+
+
+
+int main()
+{
+    dato d;
+    d.a=5;
+    d.b='<';
+    d.c='a';
+
+    printf("TAM: %d\n",sizeof(dato));//devuelve tipo de dato int = 4
+    printf("\n%d -- %c",d.a,d.b);
+
+
+    return 0;
+}
+
+
+UNA DIRECCION DE MEMORIA NO CONTIENE UN CAMPO a o CAMPO b
+
+---> & y dato accedo a la direccion de memoria

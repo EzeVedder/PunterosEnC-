@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int cargarArray(int*,int);
-void mostrarArray(int*,int);
+int mostrarArray(int*,int);
 int main()
 {
     char vector[3];
@@ -12,7 +12,7 @@ int main()
 
     if(cargarArray(vector,3) == 1)//el if espera un valor booleano si es 0 es falso
     {
-        printf("Carga exitosa!!!");
+        printf("\nCarga exitosa!!!");
     }
     else
     {
@@ -48,13 +48,17 @@ int cargarArray(int* array,int tam)
     return retorno;
 }
 
-void mostrarArray(int* array,int tam)
+int mostrarArray(int* array,int tam)
 {
     int i;
-    for(i=0;i<tam;i++)
+    int retorno = 0;
+    if(array != NULL)
     {
-        printf("\n%d",*(array+i));
-
+        retorno = 1;
+        for(i=0;i<tam;i++)
+        {
+            printf("\n%d",*(array+i));
+        }
     }
-
+    return retorno;
 }
